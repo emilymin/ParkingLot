@@ -6,4 +6,6 @@ build/
 .gradle/
 *.ipr
 *.iws
-*.iml 
+*.iml
+gradle
+.DS_Store

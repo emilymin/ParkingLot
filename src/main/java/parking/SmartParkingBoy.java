@@ -18,6 +18,7 @@ public class SmartParkingBoy extends ParkingBoy{
     @Override
     public Ticket parkCar(Car car) throws NotAvailableException {
         ParkingLot parkingLot = getMaxCapacityLot();
+        if (parkingLot == null) throw new NotAvailableException();
         return parkingLot.park(car);
     }
 
